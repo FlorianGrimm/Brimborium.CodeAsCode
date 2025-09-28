@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "sample-app-frontend": {
+    "brimborium-code-as-code": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-            "outputPath": "../SampleApp/wwwroot/static",
+            "outputPath": "../Brimborium.CodeAsCode.WebApp/wwwroot/static",
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
@@ -59,10 +59,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "sample-app-frontend:build:production"
+              "buildTarget": "brimborium-code-as-code:build:production"
             },
             "development": {
-              "buildTarget": "sample-app-frontend:build:development"
+              "buildTarget": "brimborium-code-as-code:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -88,8 +88,5 @@
         }
       }
     }
-  },
-  "cli": {
-    "analytics": "58171067-9fa5-4664-9bdd-e4027b5ce2b1"
   }
 }
