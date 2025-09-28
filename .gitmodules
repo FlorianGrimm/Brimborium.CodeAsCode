@@ -1,0 +1,6 @@
+[submodule "submodule/Brimborium.AspNetCore.ClientAppFiles"]
+	path = submodule/Brimborium.AspNetCore.ClientAppFiles
+	url = https://github.com/FlorianGrimm/Brimborium.AspNetCore.ClientAppFiles.git
+[submodule "submodule/Brimborium.CopyProject"]
+	path = submodule/Brimborium.CopyProject
+	url = https://github.com/FlorianGrimm/Brimborium.CopyProject.git
