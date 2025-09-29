@@ -18,6 +18,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Brimborium.CodeAsCode.WebApp.Tests", "test\Brimborium.CodeAsCode.WebApp.Tests\Brimborium.CodeAsCode.WebApp.Tests.csproj", "{F72FC505-FE87-46A6-A8A9-09AD44BACC98}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{4F9DEAE5-078F-E77A-2E4A-FEB6FFE226FF}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		Directory.Packages.props = Directory.Packages.props
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleApp", "..\sample\SampleApp\SampleApp.csproj", "{93A4F04D-22B0-4B5A-8AB5-1B4A93A9F0C7}"
 EndProject
@@ -32,6 +36,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Brimborium.CodeAsCode.WebApp", "src\Brimborium.CodeAsCode.WebApp\Brimborium.CodeAsCode.WebApp.csproj", "{C75D4E4C-3769-00F2-55D7-18834B59A5DB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Brimborium.CodeAsCode.WebAppFrontend", "src\Brimborium.CodeAsCode.WebAppFrontend\Brimborium.CodeAsCode.WebAppFrontend.csproj", "{1A4E97F6-AA88-D59B-AEEB-C64D65DA1E6E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Brimborium.CodeAsCode.WebApp.Casc", "src\Brimborium.CodeAsCode.WebApp.Casc\Brimborium.CodeAsCode.WebApp.Casc.csproj", "{6A75709B-EBFC-83C3-C4C8-AD1D07E619C9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -151,6 +157,18 @@ Global
 		{1A4E97F6-AA88-D59B-AEEB-C64D65DA1E6E}.Release|x64.Build.0 = Release|Any CPU
 		{1A4E97F6-AA88-D59B-AEEB-C64D65DA1E6E}.Release|x86.ActiveCfg = Release|Any CPU
 		{1A4E97F6-AA88-D59B-AEEB-C64D65DA1E6E}.Release|x86.Build.0 = Release|Any CPU
+		{6A75709B-EBFC-83C3-C4C8-AD1D07E619C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A75709B-EBFC-83C3-C4C8-AD1D07E619C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A75709B-EBFC-83C3-C4C8-AD1D07E619C9}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6A75709B-EBFC-83C3-C4C8-AD1D07E619C9}.Debug|x64.Build.0 = Debug|Any CPU
+		{6A75709B-EBFC-83C3-C4C8-AD1D07E619C9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6A75709B-EBFC-83C3-C4C8-AD1D07E619C9}.Debug|x86.Build.0 = Debug|Any CPU
+		{6A75709B-EBFC-83C3-C4C8-AD1D07E619C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A75709B-EBFC-83C3-C4C8-AD1D07E619C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A75709B-EBFC-83C3-C4C8-AD1D07E619C9}.Release|x64.ActiveCfg = Release|Any CPU
+		{6A75709B-EBFC-83C3-C4C8-AD1D07E619C9}.Release|x64.Build.0 = Release|Any CPU
+		{6A75709B-EBFC-83C3-C4C8-AD1D07E619C9}.Release|x86.ActiveCfg = Release|Any CPU
+		{6A75709B-EBFC-83C3-C4C8-AD1D07E619C9}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -165,6 +183,7 @@ Global
 		{3438FDE6-EB0A-7A82-5A69-FD26838B66B1} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
 		{C75D4E4C-3769-00F2-55D7-18834B59A5DB} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
 		{1A4E97F6-AA88-D59B-AEEB-C64D65DA1E6E} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
+		{6A75709B-EBFC-83C3-C4C8-AD1D07E619C9} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AC369CCE-B6CC-4FA4-8AC0-6E8914B6D1FE}

@@ -5,6 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Brimborium.CodeAsCode\Brimborium.CodeAsCode.csproj" />
+    <ProjectReference Include="..\..\Brimborium.CodeAsCode\src\Brimborium.CodeAsCode\Brimborium.CodeAsCode.csproj" />
+    <ProjectReference Include="..\SampleApp.Casc\SampleApp.Casc.csproj" />
   </ItemGroup>
 </Project>

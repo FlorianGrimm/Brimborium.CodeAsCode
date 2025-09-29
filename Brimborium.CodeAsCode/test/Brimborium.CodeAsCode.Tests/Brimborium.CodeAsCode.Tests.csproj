@@ -11,4 +11,10 @@
   <ItemGroup>
     <ProjectReference Include="..\..\src\Brimborium.CodeAsCode\Brimborium.CodeAsCode.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Using Include="Brimborium.CodeAsCode" />
+    <Using Include="Brimborium.CodeAsCode.CascStatic">
+      <Static>True</Static>
+    </Using>
+  </ItemGroup>
 </Project>

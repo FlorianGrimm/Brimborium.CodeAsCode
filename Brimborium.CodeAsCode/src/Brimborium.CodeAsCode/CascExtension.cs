@@ -1,6 +1,4 @@
 ﻿namespace Brimborium.CodeAsCode;
 
-public class Class1
-{
-
+public static class CascExtension {
 }

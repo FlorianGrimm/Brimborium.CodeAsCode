@@ -1,9 +1,5 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <ItemGroup>
-    <ProjectReference Include="..\SampleApp\SampleApp.csproj" />
-    <ProjectReference Include="..\..\src\Brimborium.CodeAsCode\Brimborium.CodeAsCode.csproj" />
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="TUnit" />
   </ItemGroup>
   <PropertyGroup>
@@ -12,4 +8,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Brimborium.CodeAsCode\src\Brimborium.CodeAsCode\Brimborium.CodeAsCode.csproj" />
+    <ProjectReference Include="..\SampleApp.Casc\SampleApp.Casc.csproj" />
+    <ProjectReference Include="..\SampleApp\SampleApp.csproj" />
+  </ItemGroup>
 </Project>
