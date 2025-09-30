@@ -46,7 +46,8 @@ public sealed class CascElement
 
     public long CascVersion { get; set; }
 
-    public CascElement HasDefinition<T>(
+
+    public CascElement AddDefinition<T>(
         [CallerMemberName] string name = "",
         [CallerFilePath] string callerFilePath = "",
         [CallerLineNumber] int callerLineNumber = 0
@@ -61,10 +62,29 @@ public sealed class CascElement
         return this;
     }
 
-    public T HasDefinition<T>(
+    public T AddDefinition<T>(
         T cascDefinition
         ) where T : ICascDefinition {
         this.ListDefinition.Add(cascDefinition);
         return cascDefinition;
+    }
+
+    public T? GetDefinition<T>() where T : notnull {
+        foreach (var defintion in this.ListDefinition) {
+            if (defintion is T result) {
+                return result;
+            }
+        }
+        return default;
+    }
+
+    public List<T> GetAllDefinition<T>() where T : notnull {
+        List<T> result = [];
+        foreach (var defintion in this.ListDefinition) {
+            if (defintion is T item) {
+                result.Add(item);
+            }
+        }
+        return result;
     }
 }

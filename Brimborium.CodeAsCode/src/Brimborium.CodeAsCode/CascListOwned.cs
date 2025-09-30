@@ -2,7 +2,7 @@
 
 namespace Brimborium.CodeAsCode;
 
-public class CascListOwned<T> : IEnumerable<T>
+public sealed class CascListOwned<T> : IEnumerable<T>
     where T : ICascVersion {
     private readonly ICascVersion _Owner;
     private readonly List<T> _Items = new();

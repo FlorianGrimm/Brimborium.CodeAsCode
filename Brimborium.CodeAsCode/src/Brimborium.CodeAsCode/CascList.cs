@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 
 namespace Brimborium.CodeAsCode;
+
 public class CascList<T> : IEnumerable<T>
     where T : ICascVersion {
     public long CascVersion { get; set; } = 0;
@@ -24,6 +25,7 @@ public class CascList<T> : IEnumerable<T>
     }
 
     public List<T> Items { get; } = new List<T>();
+
     public void Add(T item) {
         this.Items.Add(item);
         if (this.CascVersion < item.CascVersion) {
@@ -51,6 +53,6 @@ public class CascList<T> : IEnumerable<T>
     IEnumerator IEnumerable.GetEnumerator() => ((IEnumerable)this.Items).GetEnumerator();
 
     public int Count => this.Items.Count;
-    public T this[int index] => this.Items[index];
 
+    public T this[int index] => this.Items[index];
 }
